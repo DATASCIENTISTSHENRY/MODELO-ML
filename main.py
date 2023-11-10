@@ -32,5 +32,7 @@ X['ISO3_dest_ARG']=1
 
 if st.button('Predecir Migrantes'):
     migrantes = model.predict(X)
-    st.success(f'Cantidad de inmigrantes predicha por el modelo {migrantes[0]:.2f} en {anio}')
+    migrantes_redondeados = round(migrantes[0])
+    st.success(f'Cantidad de inmigrantes predicha por el modelo: {migrantes_redondeados} en {anio}')
+
 
