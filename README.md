@@ -14,7 +14,7 @@ El propósito principal del modelo consiste en estimar el impacto de las variaci
 
 ![Modelo](./assets/ModeloML.JPG)
 
-Para la construcción de este modelo, se generó un conjunto de datos que abarca el período de 1995 a 2020, incluyendo información sobre el flujo migratorio (valor a predecir) de todos los países reconocidos por las Naciones Unidas. Este conjunto de datos también contiene los valores correspondientes a los indicadores mencionados en las columnas. Se seleccionaron las filas que contenían más del 70% de las características no nulas, y se realizaron imputaciones de valores faltantes mediante la técnica de KNN.
+Para la construcción de este modelo, se generó un conjunto de datos que abarca el período de 1995 a 2020, incluyendo información sobre el stock migratorio (valor a predecir) de todos los países reconocidos por las Naciones Unidas. Este conjunto de datos también contiene los valores correspondientes a los indicadores mencionados en las columnas. Se seleccionaron las filas que contenían más del 70% de las características no nulas, y se realizaron imputaciones de valores faltantes mediante la técnica de KNN.
 
 Se exploraron varios modelos de regresión, siendo XGBoostRegressor el que ofreció el rendimiento más óptimo, ajustando los hiperparámetros con OPTUNA.
 
