@@ -20,6 +20,8 @@ model.load_model('xgb_model_final_3.json')
 
 
 st.sidebar.markdown("<h1 style='text-align: center; color:#893395 ; font-size: 30px;'>Indicadores</h1>", unsafe_allow_html=True)
+st.sidebar.markdown("<h3 div style='text-align: center; font-size: 16px;'>Valores en 2020, máximo y mínimo históricos</h3>", unsafe_allow_html=True)
+
 ingresos = st.sidebar.slider("Ingresos per cápita", 5.516, 35.280000, 31.334)
 electricidad = st.sidebar.slider('Acceso a electricidad', 92.154800, 100.00, 100.000000)
 crecimiento_pbi = st.sidebar.slider('Crecimiento PBI per cápita', -11.845950, 9.844296, -10.812611)
@@ -33,6 +35,8 @@ desempleados = st.sidebar.slider('Desempleados con educación avanzada', 2.92000
 
 
 st.markdown("<h2 style='text-align: center; font-size: 23px;'>Porcentaje de variación de indicadores respecto a 2020</h2>", unsafe_allow_html=True)
+
+
 
 # Crear las columnas
 columna1, columna2, columna3, columna4, columna5, columna6, columna7 = st.columns(7)
