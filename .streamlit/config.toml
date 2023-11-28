@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#E044A7"  # Violeta más intenso
+backgroundColor = "#F6F5F5" # Gris claro
+secondaryBackgroundColor = "#FFFFFF"  # Rosa suave
+textColor = "#893395"  # Texto oscuro
+font = "sans serif"
