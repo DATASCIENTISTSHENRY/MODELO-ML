@@ -11,6 +11,24 @@ from PIL import Image
 #st.set_page_config(layout="wide")
 st.title('Modelo de predicción de variación de stock migratorio Argentina')
 
+
+st.markdown(
+    """
+    <style>
+        .stApp {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/007/080/746/non_2x/grey-map-of-the-world-high-detail-world-map-vector.jpg');
+            background-size: cover;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+
+
+
 #Loading up the Regression model we created
 model = xgb.XGBRegressor()
 model.load_model('xgb_model_final_3.json')
