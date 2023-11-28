@@ -8,7 +8,7 @@ import streamlit as st
 from PIL import Image
 
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 st.title('Modelo de predicción de variación de stock migratorio Argentina')
 
 #Loading up the Regression model we created
@@ -53,7 +53,7 @@ columna1.markdown(formato_cambio("Ingresos", cambio_ingresos), unsafe_allow_html
 
 # Electricidad
 cambio_electricidad = round(((electricidad - 100.000000) * 100) / 100.000000, 1)
-columna2.markdown(formato_cambio("Electr.", cambio_electricidad), unsafe_allow_html=True)
+columna2.markdown(formato_cambio("Electric.", cambio_electricidad), unsafe_allow_html=True)
 
 # Crecimiento PBI
 cambio_crecimiento_pbi = round(((crecimiento_pbi - (-10.812611)) * 100) / (-10.812611), 1)
@@ -61,7 +61,7 @@ columna3.markdown(formato_cambio("Crec. PBI", cambio_crecimiento_pbi), unsafe_al
 
 # Importaciones
 cambio_importaciones = round(((importaciones - 4.235400e+10) * 100) / (4.235400e+10), 1)
-columna4.markdown(formato_cambio("Import.", cambio_importaciones), unsafe_allow_html=True)
+columna4.markdown(formato_cambio("Import. ", cambio_importaciones), unsafe_allow_html=True)
 
 # Desempleados
 cambio_desempleados = round(((desempleados - 4.720) * 100) / (4.720), 1)
@@ -69,11 +69,11 @@ columna5.markdown(formato_cambio("Desempl.", cambio_desempleados), unsafe_allow_
 
 # Pobreza
 cambio_pobreza = round(((pobreza - 42.00) * 100) / (42.00), 1)
-columna6.markdown(formato_cambio("Pobreza", cambio_pobreza), unsafe_allow_html=True)
+columna6.markdown(formato_cambio("Pobreza ", cambio_pobreza), unsafe_allow_html=True)
 
 # Mortalidad
 cambio_mortalidad = round(((mortalidad - 8.509) * 100) / (8.509), 1)
-columna7.markdown(formato_cambio("Mort.", cambio_mortalidad), unsafe_allow_html=True)
+columna7.markdown(formato_cambio("Mort.   ", cambio_mortalidad), unsafe_allow_html=True)
 
 
 
@@ -96,7 +96,7 @@ st.text("")
 st.text("")  
 
 
-col1, col2, col3 = st.columns([2, 5, 2])
+col1, col2, col3 = st.columns([2, 4, 2])
 
 # Colocar el botón en la columna central
 with col2:
