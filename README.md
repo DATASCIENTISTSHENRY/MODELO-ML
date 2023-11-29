@@ -22,4 +22,4 @@ En términos de evaluación del modelo, se logró un coeficiente de determinaci�
 
 Mediante la librearia streamlit se creo una aplicacción que determina el porcentaje de variacion del stock migratorio en Argentina ante variaciones en los indicadores estudiados.
 
-![Modelo](assets\ModeloML.JPG)
+![Modelo](assets/ModeloML.JPG)
