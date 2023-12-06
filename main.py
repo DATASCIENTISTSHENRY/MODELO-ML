@@ -78,7 +78,7 @@ cambio_electricidad = round(((electricidad - 100.000000) * 100) / 100.000000, 1)
 columna2.markdown(formato_cambio("Electric.", cambio_electricidad), unsafe_allow_html=True)
 
 # Crecimiento PBI
-cambio_crecimiento_pbi = round(((crecimiento_pbi - (-10.812611)) * 100) / (-10.812611), 1)
+cambio_crecimiento_pbi = round(((crecimiento_pbi - (-10.812611)) * 100) / (10.812611), 1)
 columna3.markdown(formato_cambio("Crec. PBI", cambio_crecimiento_pbi), unsafe_allow_html=True)
 
 # Importaciones
